@@ -10,25 +10,29 @@ using NUnit.Framework;
 
 namespace SeleniumAutomationLibrary.Utils
 {
-    internal class AllureInfrastructure
+    public class AllureInfrastructure
     {
-        private AllureLifecycle _allure;
+        public AllureLifecycle _allure;
         public AllureInfrastructure()
         {
             _allure = AllureLifecycle.Instance;
         }
+
         public void ExecuteAndReportPass(string message)
         {
             ExecuteAndRetry(() => ExecuteAndReport("Test: IWeb Element element found", Status.passed, message));
         }
+
         public void ExecueAndReportWarining(string message)
         {
             ExecuteAndRetry(() => ExecuteAndReport("Test: IWeb Element element not found", Status.broken, message));
         }
+
         public void ExecuteAndReportFailed(string message)
         {
             ExecuteAndRetry(() => ExecuteAndReport("Test: IWeb Element element not found", Status.failed, message));
         }
+
         private void ExecuteAndRetry(Action action)
         {
             int retryCount = 3;
@@ -60,6 +64,7 @@ namespace SeleniumAutomationLibrary.Utils
                 throw new Exception("Action failed after maximum retry attempts.");
             }
         }
+
         private void ExecuteAndReport(string stepName, Status status, string message)
         {
             StepResult result = new StepResult

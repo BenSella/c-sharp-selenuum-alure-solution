@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
@@ -7,7 +8,7 @@ using SeleniumExtras.WaitHelpers;
 
 namespace SeleniumAutomationLibrary.Utils
 {
-    internal class AutomationInfrastructureHelper
+    public class AutomationInfrastructureHelper
     {
         private IWebDriver _driver;
 
@@ -38,20 +39,18 @@ namespace SeleniumAutomationLibrary.Utils
 
         // Switch to a new window that is opened by clicking a button or link
         // Useful when the test triggers a new window popup, and the driver needs to handle it
-        public void SwitchToNewWindow(IWebDriver _driver)
+        public void SwitchToNewWindow(IWebDriver _driver, By by)
         {
-            string originalWindow = _driver.CurrentWindowHandle;  // Store the current window handle
-            _driver.FindElement(By.Id("newWindowButton")).Click();  // Perform action to open a new window
-
-            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));  // Wait until a new window opens
-            wait.Until(d => d.WindowHandles.Count > 1);  // Ensure there are more than one window handles
-
-            var windowHandles = _driver.WindowHandles;
-            foreach (var handle in windowHandles)
+            string currentWindowHandle = _driver.CurrentWindowHandle;
+            _driver.FindElement(by).Click();
+            WebDriverWait webDriverWait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10.0));
+            webDriverWait.Until((IWebDriver d) => d.WindowHandles.Count > 1);
+            ReadOnlyCollection<string> windowHandles = _driver.WindowHandles;
+            foreach (string item in windowHandles)
             {
-                if (handle != originalWindow)
+                if (item != currentWindowHandle)
                 {
-                    _driver.SwitchTo().Window(handle);  // Switch to the new window
+                    _driver.SwitchTo().Window(item);
                     break;
                 }
             }
@@ -61,8 +60,14 @@ namespace SeleniumAutomationLibrary.Utils
         // This method is useful when you need to switch back to the first window after performing actions on other windows
         public void SwitchToOriginalWindow(IWebDriver _driver)
         {
+            
             var windowHandles = _driver.WindowHandles;
-            _driver.SwitchTo().Window(windowHandles.First());  // Switch to the first window
+            // Close new window
+            _driver.Close();
+            // Switch to the first window
+            _driver.SwitchTo().Window(windowHandles.First());
+            
+            
         }
 
         // Overloaded method to switch to the original window using its handle

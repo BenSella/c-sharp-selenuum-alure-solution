@@ -582,7 +582,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.0.5",
     "restore": {
       "projectUniqueName": "C:\\Development\\VisualStudio\\SeleniumAutomationLibrary\\SeleniumAutomationLibrary\\SeleniumAutomationLibrary.csproj",
       "projectName": "SeleniumAutomationLibrary",
@@ -602,6 +602,7 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Development\\VisualStudio\\SeleniumAutomationLibrary\\SeleniumAutomationLibrary\\bin\\Debug": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },

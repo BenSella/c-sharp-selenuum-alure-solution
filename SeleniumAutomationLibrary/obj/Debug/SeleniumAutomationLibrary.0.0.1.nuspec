@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SeleniumAutomationLibrary</id>
+    <version>0.0.1</version>
+    <title>Selenium Automation Library</title>
+    <authors>Ben Sella</authors>
+    <description>Package Description</description>
+    <tags>Selenium allure helper</tags>
+    <repository type="git" commit="148cf85fe4ce3e7d7cbeed309ce1d806907318ae" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Allure.NUnit" version="2.12.1" exclude="Build,Analyzers" />
+        <dependency id="DotNetSeleniumExtras.WaitHelpers" version="3.11.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Support" version="4.24.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver" version="4.24.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver.ChromeDriver" version="128.0.6613.13700" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Development\VisualStudio\SeleniumAutomationLibrary\SeleniumAutomationLibrary\bin\Debug\net8.0\SeleniumAutomationLibrary.dll" target="lib\net8.0\SeleniumAutomationLibrary.dll" />
+  </files>
+</package>
