@@ -14,14 +14,14 @@ Additionally, it integrates with **Allure Reports**, allowing developers to gene
 - **Allure Reporting**: Integrated with Allure for generating attractive and informative test reports.
 
 ## Project Structure
-,,,
+```bash
 SeleniumAutomationLibrary/
 ├── Utils/
 │   └── AutomationInfrastructureHelper.cs  # Contains utility methods for Selenium automation
 │   └── AllureInfrastructure.cs            # Contains utility methods for Allure Reports
 ├── SeleniumAutomationLibrary.csproj        # Project file for building the library
 └── ReadMe.txt
-,,,
+```
 
 to use allure reports:
 1: activate powershell (not admin)
