@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SeleniumAutomationLibrary</id>
+    <version>0.0.9006</version>
+    <title>Selenium Automation Library</title>
+    <authors>Ben Sella</authors>
+    <description>Package Description</description>
+    <tags>Selenium allure helper</tags>
+    <repository type="git" commit="8e7bc75ecf8fe70e5dbcab252feeb7315f2c624f" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Allure.NUnit" version="2.11.0" exclude="Build,Analyzers" />
+        <dependency id="Allure.Net.Commons" version="2.11.0" exclude="Build,Analyzers" />
+        <dependency id="Allure.SpecFlow" version="2.11.0" exclude="Build,Analyzers" />
+        <dependency id="DotNetSeleniumExtras.WaitHelpers" version="3.11.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Support" version="4.24.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver" version="4.24.0" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver.ChromeDriver" version="128.0.6613.13700" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Development\VisualStudio\SeleniumAutomationLibrary\SeleniumAutomationLibrary\bin\Debug\net8.0\SeleniumAutomationLibrary.dll" target="lib\net8.0\SeleniumAutomationLibrary.dll" />
+  </files>
+</package>

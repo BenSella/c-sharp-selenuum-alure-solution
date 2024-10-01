@@ -7,10 +7,12 @@
     <authors>Ben Sella</authors>
     <description>Package Description</description>
     <tags>Selenium allure helper</tags>
-    <repository type="git" commit="148cf85fe4ce3e7d7cbeed309ce1d806907318ae" />
+    <repository type="git" commit="8e7bc75ecf8fe70e5dbcab252feeb7315f2c624f" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Allure.NUnit" version="2.12.1" exclude="Build,Analyzers" />
+        <dependency id="Allure.Net.Commons" version="2.12.1" exclude="Build,Analyzers" />
+        <dependency id="Allure.SpecFlow" version="2.12.1" exclude="Build,Analyzers" />
         <dependency id="DotNetSeleniumExtras.WaitHelpers" version="3.11.0" exclude="Build,Analyzers" />
         <dependency id="Selenium.Support" version="4.24.0" exclude="Build,Analyzers" />
         <dependency id="Selenium.WebDriver" version="4.24.0" exclude="Build,Analyzers" />

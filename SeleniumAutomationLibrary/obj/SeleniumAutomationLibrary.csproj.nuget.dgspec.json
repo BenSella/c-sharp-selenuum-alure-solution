@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Development\\VisualStudio\\SeleniumAutomationLibrary\\SeleniumAutomationLibrary\\SeleniumAutomationLibrary.csproj": {
-      "version": "0.0.5",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Development\\VisualStudio\\SeleniumAutomationLibrary\\SeleniumAutomationLibrary\\SeleniumAutomationLibrary.csproj",
         "projectName": "SeleniumAutomationLibrary",
@@ -25,7 +25,7 @@
           "net8.0"
         ],
         "sources": {
-          "C:\\Development\\VisualStudio\\SeleniumAutomationLibrary\\SeleniumAutomationLibrary\\bin\\Debug": {},
+          "C:\\Development\\VisualStudio\\SeleniumAutomationLibrary\\SeleniumAutomationLibrary\\bin": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -46,6 +46,14 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Allure.NUnit": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "Allure.Net.Commons": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "Allure.SpecFlow": {
               "target": "Package",
               "version": "[2.12.1, )"
             },

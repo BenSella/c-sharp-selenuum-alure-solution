@@ -9,15 +9,26 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>Selenium; allure ; helper</PackageTags>
     <Authors>Ben Sella</Authors>
-    <Version>0.0.5</Version>
+    <Version>1.0.0000</Version>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Allure.Net.Commons" Version="2.12.1" />
     <PackageReference Include="Allure.NUnit" Version="2.12.1" />
+    <PackageReference Include="Allure.SpecFlow" Version="2.12.1" />
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
     <PackageReference Include="Selenium.Support" Version="4.24.0" />
     <PackageReference Include="Selenium.WebDriver" Version="4.24.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="128.0.6613.13700" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Utils\AllureInfrastructure.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Utils\AutomationInfrastructureHelper.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
 
 </Project>
