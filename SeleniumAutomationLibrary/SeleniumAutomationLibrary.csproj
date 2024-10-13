@@ -2,14 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <PackageId>SeleniumAutomationLibrary</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ben Sella</Authors>
+    <Description>A library for Selenium Automation and Allure Reports</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/BenSella/c-sharp-selenuum-alure-solution</RepositoryUrl>
+    <PackageOutputPath>./nupkgs</PackageOutputPath>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Title>Selenium Automation Library</Title>
     <IncludeSymbols>False</IncludeSymbols>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>Selenium; allure ; helper</PackageTags>
-    <Authors>Ben Sella</Authors>
-    <Version>1.0.0000</Version>
+    
+    
   </PropertyGroup>
 
   <ItemGroup>

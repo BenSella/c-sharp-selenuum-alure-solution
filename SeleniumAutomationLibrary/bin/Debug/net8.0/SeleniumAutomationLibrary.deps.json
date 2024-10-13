@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "SeleniumAutomationLibrary/1.0.0000": {
+      "SeleniumAutomationLibrary/1.0.0": {
         "dependencies": {
           "Allure.NUnit": "2.12.1",
           "Allure.Net.Commons": "2.12.1",
@@ -831,7 +831,7 @@
     }
   },
   "libraries": {
-    "SeleniumAutomationLibrary/1.0.0000": {
+    "SeleniumAutomationLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

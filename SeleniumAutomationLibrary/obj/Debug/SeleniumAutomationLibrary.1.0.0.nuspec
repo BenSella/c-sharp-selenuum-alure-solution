@@ -5,9 +5,9 @@
     <version>1.0.0</version>
     <title>Selenium Automation Library</title>
     <authors>Ben Sella</authors>
-    <description>Package Description</description>
+    <description>A library for Selenium Automation and Allure Reports</description>
     <tags>Selenium allure helper</tags>
-    <repository type="git" commit="8e7bc75ecf8fe70e5dbcab252feeb7315f2c624f" />
+    <repository type="git" url="https://github.com/BenSella/c-sharp-selenuum-alure-solution" commit="674f12c92b1abb591b3dafc1a5bc45d05c127bb6" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Allure.NUnit" version="2.12.1" exclude="Build,Analyzers" />
