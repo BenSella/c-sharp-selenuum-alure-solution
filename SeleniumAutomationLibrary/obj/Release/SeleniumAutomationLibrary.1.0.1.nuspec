@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>SeleniumAutomationLibrary</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Selenium Automation Library</title>
     <authors>Ben Sella</authors>
     <description>A library for Selenium Automation and Allure Reports</description>
